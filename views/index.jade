@@ -1,0 +1,19 @@
+extends layout
+
+block content
+  h1= title
+  p Welcome to #{title}
+  label(for="fahrenheit") Convert this to Fahrenheit: 
+  input(type="text", id="celciusInput")
+  br
+  br
+  label(for="celcius") Convert this to Celcius: 
+  input(type="text", id="fahrenheitInput")
+  br
+  br
+  button(id="calculate") Calculate!
+
+  div(id="results")
+  
+  script(src="/javascripts/jquery-2.2.0.js")
+  script(src="/javascripts/main.js")
